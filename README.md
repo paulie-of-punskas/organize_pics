@@ -6,5 +6,5 @@
     - country
     - nearest (?) town/city
 
-3. Categorizes the pictures in following pattern:
+3. Categorizes the pictures in following pattern:  
 `%YEAR%_%MONTH%_%COUNTRY%_%LOCATION%`
