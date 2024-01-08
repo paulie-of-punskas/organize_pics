@@ -6,5 +6,10 @@
     - country
     - nearest (?) town/city
 
+2a. If no date or no locations was found then create corresponding folders:
+- _unknown_date
+- _unknown_location
+- _unknown_both
+
 3. Categorizes the pictures in following pattern:  
 `%YEAR%_%MONTH%_%COUNTRY%_%LOCATION%`
