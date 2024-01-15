@@ -24,6 +24,12 @@
     - `getMetadata()` - extrats GPS data and datetime when image was taken
     - `convertDMStoDD()` - converts data from DMS to DD format
 
+## How to run:
+1. create virtual environment: `python -m venv venv`
+2. run it: `source ./venv/bin/activate`
+3. install the package: `pip install -e .`
+4. after finishing, turn off virtual environemnt: `deactivate`
+
 ## To do:
 1. add more tests
 2. create directories according to date and location.
