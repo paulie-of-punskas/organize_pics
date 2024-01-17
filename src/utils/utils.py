@@ -78,7 +78,7 @@ def convertDMStoDD(direction, coordinates):
     ['N', [46.0, 35.0, 52.54]]
     """
     
-    DD = float(round(coordinates[0] + coordinates[1]/60 + coordinates[2]/3600, ndigits=6))
+    DD = float(round(float(coordinates[0]) + float(coordinates[1])/60 + float(coordinates[2])/3600, ndigits=6))
     if direction.upper() in 'WS':
         DD *= -1
     return str(f"{DD}{direction}")
@@ -98,5 +98,6 @@ class ImageData():
         self.coordinatesEW = coordinatesEW
         self.creationDateTime = creationDateTime
 
-    def __str__(self):
+    def __repr__(self):
         return f"Picture was taken on {self.creationDateTime}, near {self.coordinatesNS}{self.orientationNS} and {self.coordinatesEW}{self.orientationEW}"
+
